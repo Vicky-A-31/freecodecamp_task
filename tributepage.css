@@ -1,0 +1,95 @@
+/* color variables */
+:root{
+    --color1 : #F8D082;
+    --color2 : #E65C19;
+    --color3 : #B51B75;
+    --color4 : #640D6B;  
+}
+
+/* Universal Selector */
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* body styles */
+body{
+    background-color: rgb(222, 213, 213);
+}
+
+/* title styles */
+h2{
+    text-align: center;
+    margin: 20px 0;
+    padding: 40px 0;
+    color: whitesmoke;
+    background-color: var(--color4);
+    font-family :cursive;
+}
+
+/* image container styles - figure element */
+#img-div{
+    background-color: whitesmoke;
+    padding: 25px 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* image styles */
+#image{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+}
+
+/* image caption styles */
+#img-caption{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* content styles */
+section{
+    margin: 40px 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section div{
+    padding: 15px;
+}
+
+div h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--color2);
+}
+
+div p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* footer styles */
+footer{
+    text-align: center;
+    margin: 20px 0;
+    padding: 40px 0;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: var(--color4);
+    font-family :cursive;
+}
+
+footer a{
+    color: var(--color2);
+    text-decoration: none;
+}
