@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css">
+  </head>
+  <body>
+    <!-- title of the page -->
+    <h1 id="title">Interview Questionnaire</h1>
+    <p id="description">Personal Information</p>
+
+    <!-- form starts -->
+    <form id="survey-form">
+      <!-- name input -->
+      <label id="name-label">Name<input class="inputs" id="name" type="text" required placeholder="vignesh"></label>
+      
+      <!-- email input -->
+      <label id="email-label">E-mail<input class="inputs" id="email" type="email" required placeholder="example@gmail.com"></label>
+
+      <!-- age input -->
+      <label id="number-label">Age(optional)<input class="inputs" id="number" type="number" required min="21" max="60" placeholder="age"></label>
+
+      <!-- dropdown input -->
+      <label for="dropdown">Your are</label>
+      <select id="dropdown" class="inputs" name="qualification"> 
+        <option value="">--select--</option>
+        <option value="student">Student</option>
+        <option value="fresher">Fresher</option>
+        <option value="experience">Experience</option>
+      </select>
+
+      <!-- gender input -->
+      <div class="gender-flex">
+        <label>Gender</label>
+      <div>
+        <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+      </div>
+      </div>
+
+      <!-- job type input -->
+      <div class="job-flex">
+        <label>Your Job Type</label>
+      <div>
+        <input type="checkbox" name="jobtype" value="onsite" id="onsite"><label for="onsite">Onsite</label>
+      <input type="checkbox" name="jobtype" value="remote" id="remote"><label for="remote">Remote</label>
+      <input type="checkbox" name="jobtype" value="hybrid" id="hybrid"><label for="hybrid">Hybrid</label>
+      </div>
+      </div>
+
+      <!-- address input -->
+      <label for="address"> Address
+        <textarea class="inputs"></textarea>
+      </label>
+
+      <!-- button input -->
+      <button type="submit" id="submit">Submit</button>
+      
+    </form>
+    <!-- form end -->
+  </body>
+</html>
