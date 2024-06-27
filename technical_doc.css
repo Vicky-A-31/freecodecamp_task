@@ -1,9 +1,121 @@
+/* colors variable declaration */
 :root{
-  --color1: #000;
-  --color2: #fff;
+    --color1 : #A7E6FF;
+    --color2 : #050C9C;
+    --color3 : #3572EF;
+    --color4 : #3ABEF9;
+    --color5 : #00224D;
 }
+
 *{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+/* body styles */
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 280px auto;
+}
+
+/* navigation bar styles */
+#navbar{
+    position: fixed;
+    background-color: var(--color3);
+    padding: 15px;
+    height: 100vh;
+}
+
+#navbar section{
+    
+    margin-top: 10px;
+}
+
+#navbar .nav-link{
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(245, 245, 245);
+    border-bottom: 2px solid var(--color4);
+    padding: 5px 0;
+    margin-bottom: 3px;
+}
+
+#navbar header{
+    font-size: 25px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+/* main content styles */
+#main-doc{
+    position: absolute;
+    left: 300px;
+}
+
+#main-doc section{
+    padding: 15px 20px;
+    color: var(--color5);
+}
+
+#main-doc section header{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#main-doc section p{
+    text-align: justify;
+}
+
+section .code{
+    background-color: beige;
+    padding: 10px 20px;
+}
+
+/* bottom to top button styles */
+#Totop{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color4);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#Totop i{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    color: var(--color5);
+    font-size: 30px;
+}
+
+
+/* responsive design styles */
+@media only screen and (max-width: 600px) {
+    body{
+        grid-auto-flow: column;
+        grid-template-rows: 300px auto;
+        grid-template-columns: 1fr;
+    }
+    #navbar{
+        position: relative;
+        height: 300px;
+        box-sizing: border-box;
+    }
+
+    #navbar section{
+        overflow-y: auto;
+        height: 230px;
+    }
+
+    #main-doc{
+        position: relative;
+        left: 0;
+    }
+    
+}
+
